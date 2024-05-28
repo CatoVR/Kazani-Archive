@@ -46,6 +46,7 @@ body {
             border-top: 1px solid #e1e4e8;
             position: fixed;
             bottom: 0;
+            max-height: 300px;
         }
         .footer-sidebar {
             display: flex;
