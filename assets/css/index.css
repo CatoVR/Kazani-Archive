@@ -69,8 +69,6 @@ main{
 
 @media only all and (min-width: 1000px){
     .wrapper{
-        left: 15rem;
-        top: 15rem;
         max-width: 100%;
     }
     .headtext{
