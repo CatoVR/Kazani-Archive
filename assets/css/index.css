@@ -16,6 +16,8 @@ body {
         }
         #container {
             text-align: center;
+            position: fixed;
+            top: 0;
         }
         #icon {
             width: 150px;
@@ -40,6 +42,8 @@ body {
             padding: 20px 0;
             text-align: center;
             border-top: 1px solid #e1e4e8;
+            position: fixed;
+            bottom: 0;
         }
         .footer-sidebar {
             display: flex;
