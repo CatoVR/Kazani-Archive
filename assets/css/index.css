@@ -73,6 +73,7 @@ body {
         .other-project {
             margin: 10px;
             text-align: center;
+            width: 25%;
         }
         .other-project-link {
             text-decoration: none;
