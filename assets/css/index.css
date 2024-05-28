@@ -18,6 +18,8 @@ body {
             text-align: center;
             position: fixed;
             top: 10%;
+            width: 80%;
+            max-width: 500px;
         }
         #icon {
             width: 50%;
