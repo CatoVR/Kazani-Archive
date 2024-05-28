@@ -7,6 +7,9 @@
   --bg-secondary: #141418;
   --main-background: #2c2f33;
   --transition-speed: 600ms;
+
+  display: flex;
+    justify-content: center;
 }
 
 body {
