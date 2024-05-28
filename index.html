@@ -1,52 +1,192 @@
-<!doctype html>
-<html>
-    <head>
-		<title>Kazani Archive</title>
-		
-		<meta property="og:title" content="Kazani Archive">
-		<meta charset="utf-8">
-		<meta name="application-name" content="Kazani Archive">
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<meta name="author" content="CatoVR">
-		<meta property="og:description" content="The Kazani Archive is a free Archive, created and edited by volunteers around the Kazain system and hosted by the Kazani Archive Foundation.">  
-		<meta name="theme-color" content="#B399FC">
-		<meta property="og:image" content="assets/images/icons/KazuniFlag.webp">
-		<meta name="og:image:height" property="og:image:height" content="300">
-		<meta name="og:image:width" property="og:image:width" content="300">
-		<meta name="og:image:type" property="og:image:type" content="assets/images/icons/KazuniFlag.webp">
-		<meta property="og:site_name" content="Kazani Archive">
-		<link rel="shortcut icon" type="image/x-icon" href="assets/images/icons/KazuniFlag.webp">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kazani Archive</title>
+    
+    <meta property="og:title" content="Kazani Archive">
+    <meta charset="utf-8">
+    <meta name="application-name" content="Kazani Archive">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="author" content="CatoVR">
+    <meta property="og:description" content="The Kazani Archive is a free Archive, created and edited by volunteers around the Kazain system and hosted by the Kazani Archive Foundation.">  
+    <meta name="theme-color" content="#B399FC">
+    <meta property="og:image" content="assets/images/icons/KazuniFlag.webp">
+    <meta name="og:image:height" content="300">
+    <meta name="og:image:width" content="300">
+    <meta name="og:image:type" content="image/webp">
+    <meta property="og:site_name" content="Kazani Archive">
+    <link rel="shortcut icon" type="image/webp" href="assets/images/icons/KazuniFlag.webp">
 
-        <link rel="stylesheet" href="assets/css/index.css"/>
-        <script language="JavaScript" type="text/javascript" src="assets/js/index.js"></script>
-    </head>
-  <body>
-		<img id="icon" src="assets/images/icons/KazuniFlag.webp" draggable="false" padding="50%" style="
-    width: 25%;
-    padding-left: 37.25%;
-		">
-	  
-		<div id="wrapper1" class="wrapper">
-			<div id="about">
-				
-			</div>
-			<div id="test">
-				
-			</div>
-			<div class="search-input" id="search-input">
-<label for="searchInput" class="screen-reader-text" data-jsl10n="portal.search-input-label">Search The Kazani Archive</label>
-<input id="searchInput" name="search" type="search" size="20" autofocus="autofocus" accesskey="F" dir="auto" autocomplete="off" style="padding-right: 64px;">
-<button class="pure-button pure-button-primary-progressive" type="submit">
-<i class="sprite svg-search-icon" data-jsl10n="search-input-button">Search</i>
-</button><div class=" styled-select js-enabled">
-<div class="hide-arrow">
-<div class="styled-select-active-helper"></div>
-</div>
-<i class="sprite svg-arrow-down"></i>
-</div>
-<div id="typeahead-suggestions"></div></div>
-		</div>
-    </main>
-	
-  </body>
+    <link rel="stylesheet" href="assets/css/index.css"/>
+    <script language="JavaScript" type="text/javascript" src="assets/js/index.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        #container {
+            text-align: center;
+        }
+        #icon {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .search-container {
+            margin: 20px 0;
+        }
+        .search-input {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .search-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #f8f9fa;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            border-top: 1px solid #e1e4e8;
+        }
+        .footer-sidebar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .footer-sidebar-content {
+            max-width: 400px;
+            margin: 0 20px;
+        }
+        .footer-sidebar-icon img {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 10px;
+        }
+        .footer-sidebar-text {
+            margin: 10px 0;
+        }
+        .other-projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .other-project {
+            margin: 10px;
+            text-align: center;
+        }
+        .other-project-link {
+            text-decoration: none;
+            color: #0366d6;
+        }
+        .other-project-icon img {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 5px;
+        }
+        .site-license {
+            font-size: 12px;
+            color: #6a737d;
+        }
+        .site-license a {
+            text-decoration: none;
+            color: #0366d6;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img id="icon" src="assets/images/icons/KazuniFlag.webp" alt="Kazani Archive Logo" draggable="false">
+        <div class="search-container">
+            <input id="searchInput" class="search-input" type="search" placeholder="Search The Kazani Archive" autofocus>
+            <button class="search-button" type="submit">Search</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-sidebar">
+            <div class="footer-sidebar-content">
+                <div class="footer-sidebar-icon">
+                    <img src="assets/images/icons/KazuniFlag.webp" alt="Kazani Archive">
+                </div>
+                <div class="footer-sidebar-text">The Kazani Archive is a free archive hosted by the Kazani Archive Foundation.</div>
+                <div class="footer-sidebar-text">
+                    <a href="#" target="_blank">You can support our work with a donation.</a>
+                </div>
+            </div>
+        </div>
+        <nav class="other-projects" aria-label="Other projects">
+            <div class="other-project">
+                <a class="other-project-link" href="#">
+                    <div class="other-project-icon">
+                        <img src="assets/images/icons/KazuniFlag.webp" alt="Kazani Solar System">
+                    </div>
+                    <div class="other-project-text">
+                        <span class="other-project-title">Kazani Solar System</span>
+                        <span class="other-project-tagline">Learn about the Kazani Solar System</span>
+                    </div>
+                </a>
+            </div>
+            <div class="other-project">
+                <a class="other-project-link" href="#">
+                    <div class="other-project-icon">
+                        <img src="assets/images/icons/KazuniFlag.webp" alt="Planet Eituni">
+                    </div>
+                    <div class="other-project-text">
+                        <span class="other-project-title">Planet Eituni</span>
+                        <span class="other-project-tagline">Discover Planet Eituni</span>
+                    </div>
+                </a>
+            </div>
+            <div class="other-project">
+                <a class="other-project-link" href="#">
+                    <div class="other-project-icon">
+                        <img src="assets/images/icons/KazuniFlag.webp" alt="First Settlement Einii">
+                    </div>
+                    <div class="other-project-text">
+                        <span class="other-project-title">First Settlement Einii</span>
+                        <span class="other-project-tagline">Explore Einii, the first settlement on Eituni</span>
+                    </div>
+                </a>
+            </div>
+            <div class="other-project">
+                <a class="other-project-link" href="#">
+                    <div class="other-project-icon">
+                        <img src="assets/images/icons/KazuniFlag.webp" alt="Kazani History">
+                    </div>
+                    <div class="other-project-text">
+                        <span class="other-project-title">Kazani History</span>
+                        <span class="other-project-tagline">Dive into the history of Kazani</span>
+                    </div>
+                </a>
+            </div>
+            <div class="other-project">
+                <a class="other-project-link" href="#">
+                    <div class="other-project-icon">
+                        <img src="assets/images/icons/KazuniFlag.webp" alt="Cultural Insights">
+                    </div>
+                    <div class="other-project-text">
+                        <span class="other-project-title">Cultural Insights</span>
+                        <span class="other-project-tagline">Understand the culture of Kazani</span>
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <hr>
+        <p class="site-license">
+            <small>Content is available under the <a href="#">Creative Commons Attribution-ShareAlike License</a>.</small>
+            <small><a href="#">Terms of Use</a></small>
+            <small><a href="#">Privacy Policy</a></small>
+        </p>
+    </footer>
+</body>
 </html>
