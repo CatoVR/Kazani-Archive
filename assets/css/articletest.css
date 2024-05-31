@@ -18,7 +18,8 @@ body {
        #headlogo {
             display: flex;
             align-items: center;
-            padding-left: 15%;
+            padding-left: 13rem;
+            padding-right: 10px;
         }
           #title {
              background: #B399FC;
@@ -71,7 +72,7 @@ body {
         }
 
 /* Small screens */
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 600px){
         #topbar {
             display: block;
         }
