@@ -7,11 +7,7 @@ body {
             margin: 0;
             padding: 0;
         }
-        header {
-            background: #B399FC;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
+
         #topbar {
             padding: 10px 20px;
             display: flex;
@@ -20,10 +16,7 @@ body {
           #title {
              background: #B399FC;
              color: #fff;
-             padding: 1rem 0;
              text-align: center;
-        }
-          
         }
         #content {
             max-width: 800px;
