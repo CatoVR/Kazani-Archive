@@ -79,7 +79,7 @@ body {
         }
         #headlogo {
             padding-left: initial;
-            #margin: auto;
+            margin: auto;
             width: 40%;
         }
 }
