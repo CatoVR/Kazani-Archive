@@ -16,6 +16,11 @@ body {
             align-items: center;
             justify-content: space-between;
         }
+       #headlogo {
+            display: flex;
+            align-items: center;
+            padding-left: 15%;
+        }
           #title {
              background: #B399FC;
              color: #fff;
