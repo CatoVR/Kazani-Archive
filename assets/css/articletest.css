@@ -72,7 +72,7 @@ body {
 
 /* Small screens */
 @media only screen and (max-width: 500px){
-        *{
+        #topbar {
             display: block;
         }
         #headlogo {
