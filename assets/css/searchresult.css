@@ -1,0 +1,81 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #B399FC;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            width: 40px;
+            margin-right: 10px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .search-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .search-container input[type="search"] {
+            width: calc(100% - 80px);
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .search-container button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #B399FC;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .search-results {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            background-color: white;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+        .search-results h2 {
+            margin: 0;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+            background-color: #f9f9f9;
+            border-radius: 4px 4px 0 0;
+        }
+        .search-results ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .search-results li {
+            padding: 15px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .search-results li:last-child {
+            border-bottom: none;
+        }
+        .search-results a {
+            text-decoration: none;
+            color: #0366d6;
+        }
+        .search-results a:hover {
+            text-decoration: underline;
+        }
+               #headlogo {
+            display: flex;
+            align-items: center;
+            padding-left: 13rem;
+            padding-right: 10px;
+        }
