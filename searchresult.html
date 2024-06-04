@@ -28,25 +28,5 @@
             <!-- Search results will be dynamically inserted here -->
         </ul>
     </div>
-
-    <script>
-        function performSearch() {
-            // Example search results
-            const results = [
-                { title: 'Kazani Solar System', link: '#', snippet: 'The Kazani Solar System is a star system in the Kazani galaxy...' },
-                { title: 'Eituni Planet', link: '#', snippet: 'Eituni is the third planet in the Kazani Solar System, known for...' },
-                { title: 'Einii Settlement', link: '#', snippet: 'Einii is the first settlement established on the planet Eituni...' }
-            ];
-
-            const resultsList = document.getElementById('resultsList');
-            resultsList.innerHTML = '';
-
-            results.forEach(result => {
-                const listItem = document.createElement('li');
-                listItem.innerHTML = `<a href="${result.link}"><strong>${result.title}</strong></a><p>${result.snippet}</p>`;
-                resultsList.appendChild(listItem);
-            });
-        }
-    </script>
 </body>
 </html>
