@@ -14,8 +14,7 @@
          #headlogo {
             display: flex;
             align-items: center;
-            padding-left: 40%;
-            padding-right: 10px;
+            margin: auto;
         }
         .search-container {
             max-width: 800px;
