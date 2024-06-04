@@ -7,7 +7,12 @@ body {
             margin: 0;
             padding: 0;
         }
-        header {
+        .header {
+            background-color: #B399FC;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
         }
         #topbar {
             padding: 10px 20px;
