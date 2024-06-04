@@ -21,6 +21,7 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 0 20px;
+            display: flex;
         }
         .search-container input[type="search"] {
             width: calc(100% - 80px);
@@ -44,7 +45,6 @@
             background-color: white;
             border-radius: 4px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: flex;
         }
         .search-results h2 {
             margin: 0;
