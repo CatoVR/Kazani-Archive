@@ -4,19 +4,11 @@
             padding: 0;
             background-color: #f4f4f4;
         }
-        .header {
-            background-color: #B399FC;
-            color: white;
-            padding: 10px 20px;
+ #headlogo {
             display: flex;
             align-items: center;
-        }
-        .header img {
-            width: 40px;
-            margin-right: 10px;
-        }
-        .header h1 {
-            margin: 0;
+            padding-left: 13rem;
+            padding-right: 10px;
         }
         .search-container {
             max-width: 800px;
